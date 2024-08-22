@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fastapi-app"
+version = "0.1.0"
+description = ""
+authors = [
+    "Rajendra Kumar Yadav <13816347+rajendrakumaryadav@users.noreply.github.com>",
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.112.1"
+sqlmodel = "^0.0.21"
+alembic = "^1.13.2"
+uvicorn = "^0.30.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start_server = "fastapi_app.app:run_app"
