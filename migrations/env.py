@@ -20,10 +20,10 @@ if config.config_file_name is not None:
 # from myapp import mymodel
 from fastapi_app.models.hero import Hero  # noqa
 
-target_metadata = Hero.metadata  # Updated
-
 # target_metadata = mymodel.Base.metadata
 # target_metadata = None
+target_metadata = SQLModel.metadata  # Updated
+
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
